@@ -48,23 +48,23 @@
 				<tr>
 					<th>회원전화</th>
 					<td><%=rs.getString("phone") %></td>
-					</tr>
-					<tr>
-						<th>회원주소</th>
-						<td><%=rs.getString("address") %></td>
-					</tr>
-					<tr>
-						<th>가입일자</th>
-						<td><%=rs.getString("joindata") %></td>
-					</tr>
-					<tr>
-						<th>고객등급 A-VIP B-일반 C-직원</th>
-						<td><%=rs.getString("grade") %></td>
-					</tr>
-					<tr>
-						<th>도시코드</th>
-						<td><%= rs.getString("city") %></td>
-					</tr>
+				</tr>
+				<tr>
+					<th>회원주소</th>
+					<td><%=rs.getString("address") %></td>
+				</tr>
+				<tr>
+					<th>가입일자</th>
+					<td><%=rs.getString("joindata") %></td>
+				</tr>
+				<tr>
+					<th>고객등급 A-VIP B-일반 C-직원</th>
+					<td><%=rs.getString("grade") %></td>
+				</tr>
+				<tr>
+					<th>도시코드</th>
+					<td><%= rs.getString("city") %></td>
+				</tr>
 				<%}else{ %>
 					<tr>
 						<th>회원번호</th>
