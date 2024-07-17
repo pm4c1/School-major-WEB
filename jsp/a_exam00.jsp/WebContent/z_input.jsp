@@ -34,3 +34,23 @@
 	<nav>
 		<jsp:include page="layout/nav.jsp"></jsp:include>
 	</nav>
+	<main id="section">
+        <h3 class="title">회원매출조회</h3>
+        <div class="scroll">
+            <form name="data" action="z_inguiry.jsp" method="post" onsubmit="return checkValue()">
+                <table class="table_line">
+                    <tr>
+                        <th>회원번호</th>
+                        <th><input type="text" name="custno" autofocus></th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="조회">
+                            <input type='reset' value="취소" onclick="location.href='z_input.jsp'">
+                            <input type="button" value="회원목록조회/수정" onclick="location.href='member_list.jsp'">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
