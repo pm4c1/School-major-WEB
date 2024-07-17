@@ -56,3 +56,8 @@
 	            </form>
 	        </div>
    	 </main>
+	<footer>
+		<jsp:include page="layout/footer.jsp"></jsp:include>
+	</footer>
+</body>
+</html>
