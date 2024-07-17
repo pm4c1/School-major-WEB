@@ -16,3 +16,6 @@
     	pstmt.setString(1, request.getParameter("custno"));
     	ResultSet rs = pstmt.executeQuery();
 %> 
+<!DOCTYPE html>
+<html>
+<head>
