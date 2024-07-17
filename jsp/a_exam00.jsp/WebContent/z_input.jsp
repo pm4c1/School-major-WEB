@@ -52,6 +52,7 @@
 	                        <th><input type="text" name="custno" autofocus></th>
 	                    </tr>
 	                    <tr>
+				<!-- 버튼 생성 및 조정 -->
 	                        <td colspan="2" align="center">
 	                            <input type="submit" value="조회">
 	                            <input type='reset' value="취소" onclick="location.href='z_input.jsp'">
