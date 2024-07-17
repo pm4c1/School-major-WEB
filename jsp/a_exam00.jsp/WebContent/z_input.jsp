@@ -12,7 +12,7 @@
 	    function checkValue() {
 	        var cv = document.data;
 
-		// 입력을 안할 시 alert 띄우기
+		// ↓ 입력을 안할 시 alert 띄우기
 	        if(!cv.custno.value){
 	            alert("회원번호을 입력하세요.");
 	            cv.custno.focus();
