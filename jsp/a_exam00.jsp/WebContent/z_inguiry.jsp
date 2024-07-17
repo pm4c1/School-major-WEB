@@ -65,26 +65,26 @@
 					<th>도시코드</th>
 					<td><%= rs.getString("city") %></td>
 				</tr>
-				<%}else{ %>
-					<tr>
-						<th>회원번호</th>
-						<td><%= request.getParameter("custno") %> 등록된 자료가 없습니다</td>
-					</tr>
-				<% } %>
-					<tr>
-						<th>회원번호</th>
-						<td><%= request.getParameter("custno") %> 등록된 자료가 없습니다</td>
-					</tr>
-				<% } %>
-					<tr>
-						<td colspan="2" align="center">
-			                       		<input type="button" value="취소 후 다시 조회" onclick="location.href='z_input.jsp'">
-			                       		<input type="button" value="회원목록조회/수정" onclick="location.href='member_list.jsp'">
-                    				</td>
-					</tr>
-				</table>
+			<%}else{ %>
+				<tr>
+					<th>회원번호</th>
+					<td><%= request.getParameter("custno") %> 등록된 자료가 없습니다</td>
+				</tr>
+			<% } %>
+				<tr>
+					<th>회원번호</th>
+					<td><%= request.getParameter("custno") %> 등록된 자료가 없습니다</td>
+				</tr>
+			<% } %>
+				<tr>
+					<td colspan="2" align="center">
+			                       	<input type="button" value="취소 후 다시 조회" onclick="location.href='z_input.jsp'">
+			                       	<input type="button" value="회원목록조회/수정" onclick="location.href='member_list.jsp'">
+                    			</td>
+				</tr>
+			</table>
 		</div>
-		</main>
+	</main>
 
 	<footer>
 		<jsp:include page="layout/footer.jsp"></jsp:include>
