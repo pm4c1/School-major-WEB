@@ -23,3 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.1.1">
     <title>쇼핑몰 회원관리</title>
 </head>
+<body>
+	<header>
+		<jsp:include page="layout/header.jsp"></jsp:include>
+	</header>
