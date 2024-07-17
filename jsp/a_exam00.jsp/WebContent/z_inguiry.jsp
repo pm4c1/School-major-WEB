@@ -19,3 +19,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css?ver=1.1.1">
+<title>Insert title here</title>
+</head>
