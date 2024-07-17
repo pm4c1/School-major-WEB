@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver=1.1.1">
 	<title>쇼핑몰 회원관리</title>
 	<script type="text/javascript">
+		// 함수 선언 ( 유효성 체크 )
 	    function checkValue() {
 	        var cv = document.data;
 	
