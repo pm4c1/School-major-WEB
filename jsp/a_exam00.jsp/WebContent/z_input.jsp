@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/style.css?ver=1.1.1">
-<title>쇼핑몰 회원관리</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver=1.1.1">
+	<title>쇼핑몰 회원관리</title>
 	<script type="text/javascript">
 	    function checkValue() {
 	        var cv = document.data;
