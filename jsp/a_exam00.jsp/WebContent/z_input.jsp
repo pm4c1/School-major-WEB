@@ -31,3 +31,6 @@
 	<header>
 		<jsp:include page="layout/header.jsp"></jsp:include>
 	</header>
+	<nav>
+		<jsp:include page="layout/nav.jsp"></jsp:include>
+	</nav>
