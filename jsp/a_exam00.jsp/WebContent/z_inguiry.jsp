@@ -37,17 +37,17 @@
 		<div class="scroll">
 			<table class="table_line">
 			<% if(rs.next()){ %>
-					<tr>
-						<th>회원번호</th>
-						<td><%= rs.getString("custno") %></td>
-					</tr>
-					<tr>
-						<th>회원성명</th>
-						<td><%=rs.getString("custname") %></td>
-					</tr>
-					<tr>
-						<th>회원전화</th>
-						<td><%=rs.getString("phone") %></td>
+				<tr>
+					<th>회원번호</th>
+					<td><%= rs.getString("custno") %></td>
+				</tr>
+				<tr>
+					<th>회원성명</th>
+					<td><%=rs.getString("custname") %></td>
+				</tr>
+				<tr>
+					<th>회원전화</th>
+					<td><%=rs.getString("phone") %></td>
 					</tr>
 					<tr>
 						<th>회원주소</th>
@@ -71,20 +71,21 @@
 						<td><%= request.getParameter("custno") %> 등록된 자료가 없습니다</td>
 					</tr>
 				<% } %>
-				<tr>
+					<tr>
 						<th>회원번호</th>
 						<td><%= request.getParameter("custno") %> 등록된 자료가 없습니다</td>
 					</tr>
 				<% } %>
-				<tr>
-					<td colspan="2" align="center">
-			                        <input type="button" value="취소 후 다시 조회" onclick="location.href='z_input.jsp'">
-			                        <input type="button" value="회원목록조회/수정" onclick="location.href='member_list.jsp'">
-                    			</td>
-				</tr>
-			</table>
+					<tr>
+						<td colspan="2" align="center">
+			                       		<input type="button" value="취소 후 다시 조회" onclick="location.href='z_input.jsp'">
+			                       		<input type="button" value="회원목록조회/수정" onclick="location.href='member_list.jsp'">
+                    				</td>
+					</tr>
+				</table>
 		</div>
-	</main>
+		</main>
+
 	<footer>
 		<jsp:include page="layout/footer.jsp"></jsp:include>
 	</footer>
