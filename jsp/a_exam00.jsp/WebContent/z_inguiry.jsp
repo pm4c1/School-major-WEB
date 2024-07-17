@@ -31,3 +31,9 @@
 	<nav>
 		<jsp:include page="layout/nav.jsp"></jsp:include>
 	</nav>
+
+	<main id="section">
+		<h3 class="title">홈쇼핑 회원 정보 조회</h3>
+		<div class="scroll">
+			<table class="table_line">
+			<% if(rs.next()){ %>
