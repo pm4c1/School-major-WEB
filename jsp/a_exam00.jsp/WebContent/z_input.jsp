@@ -18,7 +18,8 @@
 	            cv.custno.focus();
 	            return false;
 	        }
-			
+
+		// 아스키 코드로 문자가 들어올 시 alert 띄우기
 	        for (var i = 0; i < cv.custno.value.length; i++) {
 	            var c = cv.custno.value.charCodeAt(i);
 	            if (c < 48 || c > 57) {
