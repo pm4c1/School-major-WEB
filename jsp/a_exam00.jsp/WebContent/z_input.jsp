@@ -44,6 +44,7 @@
 	<main id="section">
 	        <h3 class="title">회원매출조회</h3>
 	        <div class="scroll">
+
 			<!-- 조회를 눌러 이동할 페이지를 선택 ↓ -->
 	            <form name="data" action="z_inguiry.jsp" method="post" onsubmit="return checkValue()">
 	                <table class="table_line">
