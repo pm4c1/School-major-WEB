@@ -4,7 +4,8 @@
 <!-- import -->
 <%@ page import="java.sql.*" %>
 <%@ include file="layout/db_connect.jsp" %>
-<% 
+<%     
+        // java에서 Oracle DB에 있는 쿼리문을 불러옴
     	String sql="select custno, custname, phone, address, "
     	+" to_char(joindata,'yyyy-mm-dd') joindata, grade, city"
     	+" from member_tbl_02"
