@@ -11,7 +11,8 @@
 		// 함수 선언 ( 유효성 체크 )
 	    function checkValue() {
 	        var cv = document.data;
-	
+
+		// 입력을 안할 시 alert 띄우기
 	        if(!cv.custno.value){
 	            alert("회원번호을 입력하세요.");
 	            cv.custno.focus();
