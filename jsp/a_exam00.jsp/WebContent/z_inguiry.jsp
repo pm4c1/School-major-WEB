@@ -10,6 +10,8 @@
     	+" to_char(joindata,'yyyy-mm-dd') joindata, grade, city"
     	+" from member_tbl_02"
     	+" where custno = ?";
+
+        // 사용하기 위한 변수 및 기능 생성
     	PreparedStatement pstmt = conn.prepareStatement(sql);
     	pstmt.setString(1, request.getParameter("custno"));
     	ResultSet rs = pstmt.executeQuery();
