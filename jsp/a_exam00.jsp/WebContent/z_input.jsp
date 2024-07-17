@@ -31,9 +31,11 @@
 	<header>
 		<jsp:include page="layout/header.jsp"></jsp:include>
 	</header>
+
 	<nav>
 		<jsp:include page="layout/nav.jsp"></jsp:include>
 	</nav>
+
 	<main id="section">
         <h3 class="title">회원매출조회</h3>
         <div class="scroll">
