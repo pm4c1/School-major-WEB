@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>쇼핑몰 회원관리</title>
-<link rel="stylesheet" herf="../css/style.css">
+<title>쇼핑몰 회원관리 프로그램</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	<main id="header">
-		<h1>쇼핑몰 회원관리 ver 1.0</h1>
+		<h1>쇼핑몰 회원관리 ver1.0</h1>
 	</main>
 </body>
 </html>
