@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>쇼핑몰 회원관리</title>
-<link rel="stylesheet" href="../css/style.css">
+<title>쇼핑몰 회원관리 프로그램</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	<main id="footer">
-		HRDKOREA Copyright&copy;2016 All right reserver. Human Resources Development Service of Korea.
+		HRDKOREA Copyright&copy;2016 All rights reserved. 
+		Human Resources Development Service of Korea.
 	</main>
 </body>
 </html>
