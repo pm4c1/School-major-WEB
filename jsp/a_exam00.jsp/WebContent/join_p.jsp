@@ -26,7 +26,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>쇼핑몰 회원관리</title>
+<title>쇼핑몰 회원관리 프로그램</title>
 </head>
 <body>
 	<jsp:forward page="join.jsp"></jsp:forward>
