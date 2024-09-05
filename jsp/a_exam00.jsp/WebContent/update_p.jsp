@@ -5,35 +5,35 @@
 <%@ include file="layout/db_connect.jsp" %>
 <%
 try {
-    request.setCharacterEncoding("UTF-8");
-
-    String sql = " update member_tbl_02 "
-              + " set custname=?, phone=?, address=?, joindata=?, grade=?, city=? "
-              + " where custno="+ request.getParameter("custno");
-    PreparedStatement pstmt = conn.prepareStatement(sql);
-
-    pstmt.setString(1, request.getParameter("custname"));
-    pstmt.setString(2, request.getParameter("phone"));
-    pstmt.setString(3, request.getParameter("address"));
-    pstmt.setString(4, request.getParameter("joindata"));
-    pstmt.setString(5, request.getParameter("grade"));
-    pstmt.setString(6, request.getParameter("city"));
-
-    pstmt.executeUpdate();
-
+	request.setCharacterEncoding("UTF-8");
+	
+	String sql = "update member_tbl_02 "
+			  + " set custname=?, phone=?, address=?, joindate=?, grade=?, city=? "
+			  + " where custno="+ request.getParameter("custno");
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	
+	pstmt.setString(1, request.getParameter("custname"));
+	pstmt.setString(2, request.getParameter("phone"));
+	pstmt.setString(3, request.getParameter("address"));
+	pstmt.setString(4, request.getParameter("joindate"));
+	pstmt.setString(5, request.getParameter("grade"));
+	pstmt.setString(6, request.getParameter("city"));
+	
+	pstmt.executeUpdate();
+	
 } catch(Exception e) {
-    e.printStackTrace();
+	e.printStackTrace();
 }
 %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>쇼핑몰 회원관리</title>
+<meta charset="UTF-8">
+<title>쇼핑몰 회원관리 프로그램</title>
 </head>
 <body>
 <body>
-    <jsp:forward page="join.jsp"></jsp:forward>
+	<jsp:forward page="member_list.jsp"></jsp:forward>
 </body>
 </body>
 </html>
