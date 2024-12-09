@@ -6,8 +6,8 @@
 <%
     String sql = "SELECT P_NO, P_NAME, " +
         "SUBSTR(P_BIRTH, 1, 4) || '년' || SUBSTR(P_BIRTH, 5, 2) || '월' || SUBSTR(P_BIRTH, 7, 2) || '일' AS P_BIRTH, " +
-        "CASE WHEN P_GENDER = 'M' THEN '여' " +
-        "     WHEN P_GENDER = 'F' THEN '남' " +
+        "CASE WHEN P_GENDER = 'M' THEN '남' " +
+        "     WHEN P_GENDER = 'F' THEN '여' " +
         "     ELSE '중성' END AS P_GENDER, " +
         " P_TEL1 || '-' || P_TEL2 || '-' || P_TEL3 AS P_TEL, " +
         " CASE P_CITY " +
@@ -33,6 +33,11 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <title>진단검사 프로그램</title>
+<style>
+th {
+	background-color: #F5BA4E;
+}
+</style>
 </head>
 <body>
 <header>
@@ -71,21 +76,3 @@
 </footer>
 </body>
 </html>
-
-
-<h2 class="title">강사조회(teacher_list.jsp)</h2>
-        <table class="table_line" border="">
-            <tr> <th>강사코드</th> <th>강사명</th> <th>강의명</th> <th>수강료</th> <th>강사자격취득일</th> </tr>
-        
-            <!-- 변동이 없는 부분 -->
-            <% while(rs.next()){ %>
-                <tr align="center">
-                    <td><%= rs.getString(1) %></td>
-                    <td><%= rs.getString(2) %></td>
-                    <td><%= rs.getString(3) %></td>
-                    <td><%= rs.getString(4) %></td>
-                    <td><%= rs.getString(5) %></td>
-                </tr>
-            <% } %>
-            <!-- 변동이 있는 부분 -->
-        </table>
